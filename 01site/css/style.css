@@ -241,8 +241,6 @@ body{
 
 .footWrap1 li{
     float:left;
-    position: relative;
-    
 }
 
 .footWrap1 li a{
@@ -250,7 +248,9 @@ body{
     color: #B7B7B7;
     font-weight: bold;
     font-size: 12px;
-    padding: 17px 20px;
+    padding: 0 10px;
+    line-height: 45px;
+    position: relative;
 }
 
 .footWrap1 li a:after{
@@ -261,24 +261,28 @@ body{
     background: #717171;
     position: absolute;
     right: 0;
-    top:20px;    
+    top:18px;    
 }
 
 .footWrap1 li:last-child a:after{display: none;}
 .footWrap1 li:first-child a:first-child{padding-left: 0;}
+
 
 .footWrap2{
     background: #5E5E5E;
     height: 100px;
 }
 
-.footWrap2 .text h2{
+.footWrap2 h2{
     float: left;
-    margin-left: 0;
     color:white;
+    padding: 35px 100px 35px 0px;
 }
 
-.footWrap2 .footMenu p{
+.footWrap2 p{
     float: left;
-    color:#A1A1A1;
+    color: #AAA ;
+    padding: 10px 0px;
+    line-height: 20px;
+    font-size: 12px;
 }
