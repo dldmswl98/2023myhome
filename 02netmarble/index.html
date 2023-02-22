@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넷마블문화재단</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+</head>
+<body>
+    <header class="hd">
+        <div class="navWrap container clearfix">
+            <h1><a href="#"><img src="images/main/logo01.png" alt=""></a></h1>
+            <nav class="gnb menuFont">
+                <ul class="clearfix">
+                    <li><a href="#">재단소개</a></li>
+                    <li><a href="#">재단활동</a></li>
+                    <li><a href="#">재단소식</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="slideWrap">
+        <ul class="slide">
+            <li style="background-image:url(images/main/banner01.jpg)" class="sItem">
+                <div class="txtWrap">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, delectus!</p>
+                </div>
+            </li>
+            <li style="background-image:url(images/main/banner02.jpg)" class="sItem">
+                <div class="txtWrap">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, delectus!</p>
+                </div>
+            </li>
+            <li style="background-image:url(images/main/banner03.jpg)" class="sItem">
+                <div class="txtWrap">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, delectus!</p>
+                </div>
+            </li>
+            <li style="background-image:url(images/main/banner0.jpg)" class="sItem">
+                <div class="txtWrap">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, delectus!</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <section class="content container">
+
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $(".slide").bxSlider({
+            auto:true,
+            controls:false,
+            pager:false,
+        });
+    </script>
+
+</body>
+</html>
