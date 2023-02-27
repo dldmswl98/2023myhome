@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netmarble</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="hd" onmouseover="hdOver()" onmouseout="hdOut()">
+        <div class="navWrap container clearfix">
+            <h1><a href="#"><img src="images/main/logo.png" alt="" class="logoImg"></a></h1>
+            <nav class="gnb menuFont">
+                <ul class="clearfix">
+                    <li><a href="#">재단소개</a></li>
+                    <li><a href="#">재단활동</a></li>
+                    <li><a href="#">재단소식</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="subMenu">
+            <div class="subWrap container clearfix">
+                <div class="categoryWrap clearfix">
+                    <div class="subCategory">
+                        <div class="category"><a href="#">넷마블문화재단</a></div>
+                        <div class="category"><a href="#">오시는 길</a></div>
+                    </div>
+                    <div class="subCategory">
+                        <div class="category"><a href="#">문화 만들기</a></div>
+                        <div class="category"><a href="#">인재 키우기</a></div>
+                        <div class="category"><a href="#">마음 만들기</a></div>
+                    </div>
+                    <div class="subCategory">
+                        <div class="category"><a href="#">공지사항</a></div>
+                        <div class="category"><a href="#">뉴스룸</a></div>
+                        <div class="category"><a href="#">소셜미디어</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slideWrap">
+        <ul class="slide">
+            <li style="background-image:url(images/main/banner01.jpg)" class="sItem">
+                <div class="txtWrap">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, eaque.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="content container">
+
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        // header 
+        //const logoElem = document.getElementsByClassName("logoImg")[0];
+        const hdElem = document.querySelector(".hd");
+        
+        hdElem.classList.add("hdClick");
+        function hdOver(){
+            hdElem.classList.remove("hdClick");
+        }
+        function hdOut(){
+            hdElem.classList.add("hdClick");
+        }
+
+        window.addEventListener('scroll', function(){
+            if (window.scrollY == 0){
+                console.log(window.scrollY)
+                hdOver()
+                hdOut()
+            }else{
+                hdElem.classList.remove("hdClick");
+            }
+        });
+
+
+        //subMenu
+        
+        </script>
+
+</body>
+</html>
