@@ -80,27 +80,6 @@ body{
     margin-right: 100px; 
 }
 
-/* .hd .gnb .subMenu>li{
-    line-height: 50px;
-    background-color: white;
-  }
-  
-.hd .gnb .subMenu{
-    height: 0; 
-    overflow: hidden;
-}
-
-.mainMenu > li:hover>a{
-    border-bottom: 2px solid #FFD44A;
-    transition-duration: 0.5s;
-}
-  
-.mainMenu > li:hover .subMenu{
-    height: 200px;
-    transition-duration: 0.3s; 
-} */
-
-
 /* bg slide  */
 
 .bx-wrapper {
@@ -281,3 +260,54 @@ body{
     background: #FFD44A;
     margin-top: 10px;
 }
+
+.conMenuWrap{
+    float: right;
+}
+
+.conMenuWrap li{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+/* swiper  */
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        padding:30px 0;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+
+    /* .sWrap{
+        width: 1280px;
+        margin: 0 auto;
+        padding: 30px 0;
+    } */
+    .swiper .imgWrap{
+        width: 100%;
+        height: 0;
+        padding-top: 60%;
+        background-position: center;
+        background-size: cover;
+    }
+    .swiper .tWrap{
+        padding: 10px 20px;
+        background: white;
+    }
+
+    .swiper .itemWrap{
+        transition: 0.3s;
+    }
+    .swiper .itemWrap:hover{
+        transform: translateY(-20px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }

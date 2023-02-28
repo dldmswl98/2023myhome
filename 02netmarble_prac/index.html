@@ -14,7 +14,7 @@
     <header class="hd" onmouseover="hdOver()" onmouseout="hdOut()">
         <div class="navWrap container clearfix">
             <h1><a href="#"><img src="images/main/logo.png" alt="" class="logoImg"></a></h1>
-            <nav class="gnb menuFont">
+            <nav class="gnb menuFont" onmouseover="gnbOver()" onmouseout="gnbOut()">
                 <ul class="clearfix">
                     <li><a href="#">재단소개</a></li>
                     <li><a href="#">재단활동</a></li>
@@ -62,6 +62,8 @@
         // header 
         //const logoElem = document.getElementsByClassName("logoImg")[0];
         const hdElem = document.querySelector(".hd");
+        const subElem = document.getElementsByClassName("subMenu")[0];
+        const cgElem = document.getElementsByClassName("subCategory")[0];
         
         hdElem.classList.add("hdClick");
         function hdOver(){
@@ -80,9 +82,26 @@
                 hdElem.classList.remove("hdClick");
             }
         });
+        
+        subElem.style.display = "none";
+        function gnbOver(){
+            subElem.style.display = "";
+            subElem.style.borderTop = "1px solid #F7F8F9";
+        }
+
+        function gnbOut(){
+            subElem.style.display = "none";
+            // cgElem.onmouseout = function(){
+            //     subElem.style.display = "none";
+            // }
+            //subElem.style.display = "none";
+            // subElem.style.display = "none";
+        }
+
+        
 
 
-        //subMenu
+        
         
         </script>
 

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -160,15 +161,97 @@
     </section>
 
     <section class="content4">
-        <div class="wrap container">
+        <div class="wrap container clearfix">
             <h4>재단소식</h4>
             <div class="conbar"></div>
+            <div class="conMenu clearfix">
+                <nav class = "conMenuWrap">
+                    <ul class="clearfix">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">뉴스룸</a></li>
+                        <li><a href="#">소셜미디어</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                    <!-- item s 1-->
+                    <div class="swiper-slide">
+                        <div class="itemWrap">
+                            <div class="imgWrap" style="padding-top:0">
+                            </div>
+                            <div class="tWrap">
+                                <h4>넷마블문화재단 사업기획 및 운영<br>담당자 모집</h4>
+                                <p>넷마블문화재단에서 아래와 같이 새로운 직원을 모집합니다. 많은 분들의 지원 바랍니다.</p>
+                                <p>1.직무...</p>
+                                <div class="underText">공지사항.2023.01.26</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- item e 1 -->
+                    <!-- item s 1-->
+                    <div class="swiper-slide">
+                        <div class="itemWrap">
+                            <div class="imgWrap" style="background-image:url(images/main/img01.jpg)">
+                            </div>
+                            <div class="tWrap">
+                                <h3>Lorem, ipsum dolor.1</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item e 1 -->
+                        <!-- item s 1-->
+                    <div class="swiper-slide">
+                        <div class="itemWrap">
+                            <div class="imgWrap" style="background-image:url(images/main/img01.jpg)">
+                            </div>
+                            <div class="tWrap">
+                                <h3>Lorem, ipsum dolor.1</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item e 1 -->
+                        <!-- item s 1-->
+                    <div class="swiper-slide">
+                        <div class="itemWrap">
+                            <div class="imgWrap" style="background-image:url(images/main/img01.jpg)">
+                            </div>
+                            <div class="tWrap">
+                                <h3>Lorem, ipsum dolor.1</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item e 1 -->
+                        <!-- item s 1-->
+                    <div class="swiper-slide">
+                        <div class="itemWrap">
+                            <div class="imgWrap" style="background-image:url(images/main/img01.jpg)">
+                            </div>
+                            <div class="tWrap">
+                                <h3>Lorem, ipsum dolor.1</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, a.</p>
+                            </div>
+                        </div>
+                  </div>
+                 <!-- item e 1 -->
+        
+        
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </div>
     </section>
 
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script>
         $(".slide").bxSlider({
             auto:true,
@@ -178,46 +261,16 @@
             speed:300,
         });
 
+        var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 3.2,
+        spaceBetween: 20,
+        //   loop:true,
+        //   pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //   },
+        });
 
-
-
-    //     $('.mainMenu > li').mouseenter(function(){
-    //     let menu_i = $(this).index();
-        
-    //     if(menu_i < 4) { //하단 바(빨간색) 이동으로 인해 index는 4 이하로 한정시킴
-
-    //         $('.subMenu').css({ //모두 display:none 시킨 후 
-    //             display:'none'
-    //         }).eq($(this).index()).css({ // 해당 인덱스 넘버만 보여질 수 있도록 한다.
-    //             display:'block'
-    //         })
-    //     }
-    //     });
-    //     $('.mainMenu > li').mouseleave(function(){
-    //         let menu_i = $(this).index();
-
-    //         if(menu_i < 4) {
-
-    //             $('.subMenu').eq($(this).index()).css({
-    //                 display:'none'
-
-    //             })
-    //         }
-    //     })
-
-    // //menu_sub_pan : 100% 부분
-
-    //     $('.subMenu').mouseenter(function(){
-    //         $('.subMenu').eq($(this).index()).css({
-    //             display:'block'
-    //         })
-    //     })
-    //     $('.subMenu').mouseleave(function(){
-    //         $('.subMenu').eq($(this).index()).css({
-    //             display:'none'
-
-    //         })
-    //     })
     </script>
 
 </body>
