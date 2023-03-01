@@ -23,6 +23,31 @@ body{
     width: 1280px;margin: 0 auto;position: relative;
 }
 
+/* header click  */
+.hd.hdClick{
+    /* padding: 20px 0; */
+    background: none;
+    position: fixed; 
+    width: 100%;
+    height: 75px; 
+    z-index: 9999;
+    box-shadow: none;
+}
+
+.hd.hdClick li a{
+    color: white;
+    transition: 0.3s;
+    line-height: 75px;
+    text-align: center;
+    display: inline-block;
+    height: 75px; 
+    margin: 0 auto;
+}
+
+.hd.hdClick .logoImg{
+    content: url("../images/main/logo02.png");
+}
+
 /* header  */
 .hd{
     /* padding: 20px 0; */
@@ -34,24 +59,29 @@ body{
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 .hd .navWrap{
+    /* height: 35px;  */
     height: 100%;
-} 
+}
 .hd h1{
     padding: 20px 0;
-    width: 165px;height: 35px;
+    width: 165px;
+    height: 35px;
     float: left;
 }
 .hd h1 img{width: 100%;}
 .hd .gnb{float: right;}
-.hd .gnb .mainMenu>li{
+.hd .gnb li{
+    /* float: left;width: 170px; */
     float: left;
     display: block;
     position: relative;
     width: 170px;
     text-align: center;
 }
-.hd .gnb .mainMenu>li>a{
-    /* display: block; */
+.hd .gnb li a{
+    /* display: block;
+    line-height: 35px;
+    text-align: center; */
     line-height: 75px;
     text-align: center;
     display: inline-block;
@@ -59,25 +89,30 @@ body{
     margin: 0 auto;
 }
 
-.mainMenu>li:hover>a{
+.gnb li:hover a{
     border-bottom: 4px solid #FFD44A;
     /* transition-duration: 0.3s; */
 }
 
+/* subMenu  */
 .subMenu {
     width: 100%;
     background: white;
 }
 
 
-.subCategory {
+.categoryWrap{
+    float:right;
+}
+
+.subCategory{
     float: left;
     margin: 30px 0;
 }
 
 .category {
     padding: 9px 0px;
-    margin-right: 100px; 
+    margin-left: 110px; 
 }
 
 /* bg slide  */
@@ -295,7 +330,7 @@ body{
     .swiper .imgWrap{
         width: 100%;
         height: 0;
-        padding-top: 60%;
+        padding-top: 50%;
         background-position: center;
         background-size: cover;
     }
@@ -310,4 +345,53 @@ body{
     .swiper .itemWrap:hover{
         transform: translateY(-20px);
         box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .swiper .tWrap .post{
+        padding-top: 40%;
+        font-size: 15px;
+        color: #BFBFBF;
+    }
+
+
+    /* footer  */
+    .ft{
+        background: #171717;
+        height: 300px;
+    }
+
+
+    .ftWrap .ftcon1{
+        padding-top: 50px;
+    }
+
+    .ftWrap .con1Text{
+        background: #080808;
+        color: #727072;
+        width: 170px;
+        height: 30px;
+        font-size: 8px;
+        padding: 7px 0;
+        padding-left: 20px;
+        float: right;
+    }
+
+    .ftWrap .ftcon1 img{
+        float: left;
+    }
+
+    .ftWrap .ftcon2{
+        color: #797876;
+        padding: 30px 0;
+        font-size: 10px;
+    }
+
+    .ftcon3 .ftMenu li{
+        float:left;
+    }
+
+    .ftcon3 .ftMenu li a{
+        color: #A09EA0;
+        font-size: 12px;
+        margin-left: 20px;
     }

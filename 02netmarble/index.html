@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="hd">
+    <header class="hd" onmouseover="hdOver()" onmouseout="hdOut()">
         <div class="navWrap container clearfix">
-            <h1><a href="#"><img src="images/main/logo01.png" alt=""></a></h1>
-            <nav class="gnb menuFont">
-                <ul class= "mainMenu clearfix">
+            <h1><a href="#"><img src="images/main/logo01.png" alt="" class="logoImg"></a></h1>
+            <nav class="gnb menuFont" onmouseover="gnbOver()" onmouseout="gnbOut()">
+                <ul class="clearfix">
                     <li><a href="#">재단소개</a></li>
                     <li><a href="#">재단활동</a></li>
                     <li><a href="#">재단소식</a></li>
@@ -26,19 +26,21 @@
         </div>
         <div class="subMenu">
             <div class="subWrap container clearfix">
-                <div class="subCategory">
-                    <div class="category"><a href="#">넷마블문화재단</a></div>
-                    <div class="category"><a href="#">오시는 길</a></div>
-                </div>
-                <div class="subCategory">
-                    <div class="category"><a href="#">문화 만들기</a></div>
-                    <div class="category"><a href="#">인재 키우기</a></div>
-                    <div class="category"><a href="#">마음 만들기</a></div>
-                </div>
-                <div class="subCategory">
-                    <div class="category"><a href="#">공지사항</a></div>
-                    <div class="category"><a href="#">뉴스룸</a></div>
-                    <div class="category"><a href="#">소셜미디어</a></div>
+                <div class="categoryWrap clearfix">
+                    <div class="subCategory">
+                        <div class="category"><a href="#">넷마블문화재단</a></div>
+                        <div class="category"><a href="#">오시는 길</a></div>
+                    </div>
+                    <div class="subCategory">
+                        <div class="category"><a href="#">문화 만들기</a></div>
+                        <div class="category"><a href="#">인재 키우기</a></div>
+                        <div class="category"><a href="#">마음 만들기</a></div>
+                    </div>
+                    <div class="subCategory">
+                        <div class="category"><a href="#">공지사항</a></div>
+                        <div class="category"><a href="#">뉴스룸</a></div>
+                        <div class="category"><a href="#">소셜미디어</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,26 +181,25 @@
                     <!-- item s 1-->
                     <div class="swiper-slide">
                         <div class="itemWrap">
-                            <div class="imgWrap" style="padding-top:0">
-                            </div>
+                            <div class="imgWrap" style="padding-top: 0;"></div>
                             <div class="tWrap">
-                                <h4>넷마블문화재단 사업기획 및 운영<br>담당자 모집</h4>
+                                <h3>넷마블문화재단 사업기획 및 운영<br>담당자 모집</h3>
                                 <p>넷마블문화재단에서 아래와 같이 새로운 직원을 모집합니다. 많은 분들의 지원 바랍니다.</p>
                                 <p>1.직무...</p>
-                                <div class="underText">공지사항.2023.01.26</div>
+                                <p style="padding-top: 90%" class="post">공지사항.2023.01.26</p>
                             </div>
-                            
                         </div>
                     </div>
                     <!-- item e 1 -->
                     <!-- item s 1-->
                     <div class="swiper-slide">
                         <div class="itemWrap">
-                            <div class="imgWrap" style="background-image:url(images/main/img01.jpg)">
+                            <div class="imgWrap" style="background-image:url(images/main/menu01.jpg)">
                             </div>
                             <div class="tWrap">
-                                <h3>Lorem, ipsum dolor.1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, a.</p>
+                                <h3>2022년 기부금품 모집완료내역<br>보고</h3>
+                                <p>재단법인 넷마블문화재단은 '기부금품의 모집 및<br>사용에 관한 법률'에 의거하여 기부금품 모집 내역...</p>
+                                <p class="post">공지사항.2023.01.18</p>
                             </div>
                         </div>
                     </div>
@@ -206,11 +207,13 @@
                         <!-- item s 1-->
                     <div class="swiper-slide">
                         <div class="itemWrap">
-                            <div class="imgWrap" style="background-image:url(images/main/img01.jpg)">
+                            <div class="imgWrap" style="background-image:url(images/main/menu02.jpg)">
                             </div>
                             <div class="tWrap">
-                                <h3>Lorem, ipsum dolor.1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, a.</p>
+                                <h3>2022 함께하는 게임소통학교 모집(심화교육)</h3>
+                                <p style="color:red">교육 신청 링크:</p>
+                                <p>http://froms.gle/4HuUziFFJtYDZpcLA...</p>
+                                <p class="post" style="padding-top: 48%;">공지사항.2022.10.19</p>
                             </div>
                         </div>
                     </div>
@@ -218,27 +221,70 @@
                         <!-- item s 1-->
                     <div class="swiper-slide">
                         <div class="itemWrap">
-                            <div class="imgWrap" style="background-image:url(images/main/img01.jpg)">
+                            <div class="imgWrap" style="background-image:url(images/main/menu03.jpg)">
                             </div>
                             <div class="tWrap">
-                                <h3>Lorem, ipsum dolor.1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, a.</p>
+                                <h3>제14회 게임콘서트 개최안내</h3>
+                                <p>>>>9월 게임콘서트 참여하기 링크<<<</p>
+                                <p>...</p>
+                                <p class="post" style="padding-top: 48%;">공지사항.2022.09.23</p>
                             </div>
                         </div>
                     </div>
                     <!-- item e 1 -->
-                        <!-- item s 1-->
+                    <!-- item s 1-->
                     <div class="swiper-slide">
                         <div class="itemWrap">
-                            <div class="imgWrap" style="background-image:url(images/main/img01.jpg)">
+                            <div class="imgWrap" style="background-image:url(images/main/menu04.jpg)">
                             </div>
                             <div class="tWrap">
-                                <h3>Lorem, ipsum dolor.1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, a.</p>
+                                <h3>넷마블게임박물관 건립준비캠페인</h3>
+                                <!-- <p></p> -->
+                                <p class="post" style="padding-top: 60%;">공지사항.2022.09.14</p>
                             </div>
                         </div>
-                  </div>
-                 <!-- item e 1 -->
+                    </div>
+                    <!-- item e 1 -->
+                    <!-- item s 1-->
+                    <div class="swiper-slide">
+                        <div class="itemWrap">
+                            <div class="imgWrap" style="background-image:url(images/main/menu05.jpg)">
+                            </div>
+                            <div class="tWrap">
+                                <h3>[게임소통학교]도미노 영상 이벤트<br>결과 발표</h3>
+                                <p>...</p>
+                                <p class="post" style="padding-top: 46%;">공지사항.2022.08.18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item e 1 -->
+                    <!-- item s 1-->
+                    <div class="swiper-slide">
+                        <div class="itemWrap">
+                            <div class="imgWrap" style="background-image:url(images/main/menu03.jpg)">
+                            </div>
+                            <div class="tWrap">
+                                <h3>제13회 게임콘서트 개최 안내</h3>
+                                <p>>>>6월 게임콘서트 참여하기 링크<<<</p>
+                                <p class="post" style="padding-top: 54%;">공지사항.2022.06.23</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item e 1 -->
+                    <!-- item s 1-->
+                    <div class="swiper-slide">
+                        <div class="itemWrap">
+                            <div class="imgWrap" style="background-image:url(images/main/menu05.jpg)">
+                            </div>
+                            <div class="tWrap">
+                                <h3>2022 넷마블 온라인 게임소통학교<br>참가 가족 모집(구.게임소통교육)</h3>
+                                <p>안녕하세요.</p>
+                                <p>게임에 대한 부모와 자녀 간의 견해 차이...</p>
+                                <p class="post">공지사항.2022.06.15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item e 1 -->
         
         
                 </div>
@@ -247,12 +293,79 @@
         </div>
     </section>
 
+    <footer class="ft">
+        <div class="footerWrap container">
+            <div class="ftWrap">
+                <div class="ftcon1 clearfix">
+                    <img src="images/main/logo02.png" alt="">
+                    <div class="con1Text">Family Site</div>
+                </div>
+    
+                <div class="ftcon2">
+                    <p>서울특별시 구로구 디지털로26길 38, G-Tower 넷마블<br>
+                        Copyright © Netmarble Corp. All Rights Reserved.</p>
+                </div>
+    
+                <div class="ftcon3">
+                    <div class="ftMenu">
+                        <ul class="clearfix">
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">SNS저작물 이용 동의서</a></li>
+                            <li><a href="#">이메일 문의</a></li>
+                            <li><a href="#">주무관청</a></li>
+                            <li><a href="#">국세청</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
+        // header 
+        //const logoElem = document.getElementsByClassName("logoImg")[0];
+        const hdElem = document.querySelector(".hd");
+        const subElem = document.getElementsByClassName("subMenu")[0];
+        const cgElem = document.getElementsByClassName("subCategory")[0];
+        
+        hdElem.classList.add("hdClick");
+        function hdOver(){
+            hdElem.classList.remove("hdClick");
+        }
+        function hdOut(){
+            hdElem.classList.add("hdClick");
+        }
+
+        window.addEventListener('scroll', function(){
+            if (window.scrollY == 0){
+                console.log(window.scrollY)
+                hdOver()
+                hdOut()
+            }else{
+                hdElem.classList.remove("hdClick");
+            }
+        });
+        
+        subElem.style.display = "none";
+        function gnbOver(){
+            subElem.style.display = "";
+            subElem.style.borderTop = "1px solid #F7F8F9";
+        }
+
+        function gnbOut(){
+            subElem.style.display = "none";
+            // cgElem.onmouseout = function(){
+            //     subElem.style.display = "none";
+            // }
+            //subElem.style.display = "none";
+            // subElem.style.display = "none";
+        }
         $(".slide").bxSlider({
             auto:true,
             controls:false,
@@ -263,7 +376,7 @@
 
         var swiper = new Swiper(".mySwiper1", {
         slidesPerView: 3.2,
-        spaceBetween: 20,
+        spaceBetween: 25,
         //   loop:true,
         //   pagination: {
         //     el: ".swiper-pagination",
