@@ -181,12 +181,12 @@
                     <!-- item s 1-->
                     <div class="swiper-slide">
                         <div class="itemWrap">
-                            <div class="imgWrap" style="padding-top: 0;"></div>
-                            <div class="tWrap">
+                            <!-- <div class="imgWrap" style="height: 0;"></div> -->
+                            <div class="tWrap" style="height: 100%;">
                                 <h3>넷마블문화재단 사업기획 및 운영<br>담당자 모집</h3>
                                 <p>넷마블문화재단에서 아래와 같이 새로운 직원을 모집합니다. 많은 분들의 지원 바랍니다.</p>
                                 <p>1.직무...</p>
-                                <p style="padding-top: 90%" class="post">공지사항.2023.01.26</p>
+                                <p class="post">공지사항.2023.01.26</p>
                             </div>
                         </div>
                     </div>
@@ -204,7 +204,7 @@
                         </div>
                     </div>
                     <!-- item e 1 -->
-                        <!-- item s 1-->
+                    <!-- item s 1-->
                     <div class="swiper-slide">
                         <div class="itemWrap">
                             <div class="imgWrap" style="background-image:url(images/main/menu02.jpg)">
@@ -213,12 +213,12 @@
                                 <h3>2022 함께하는 게임소통학교 모집(심화교육)</h3>
                                 <p style="color:red">교육 신청 링크:</p>
                                 <p>http://froms.gle/4HuUziFFJtYDZpcLA...</p>
-                                <p class="post" style="padding-top: 48%;">공지사항.2022.10.19</p>
+                                <p class="post">공지사항.2022.10.19</p>
                             </div>
                         </div>
                     </div>
                     <!-- item e 1 -->
-                        <!-- item s 1-->
+                    <!-- item s 1-->
                     <div class="swiper-slide">
                         <div class="itemWrap">
                             <div class="imgWrap" style="background-image:url(images/main/menu03.jpg)">
@@ -227,7 +227,7 @@
                                 <h3>제14회 게임콘서트 개최안내</h3>
                                 <p>>>>9월 게임콘서트 참여하기 링크<<<</p>
                                 <p>...</p>
-                                <p class="post" style="padding-top: 48%;">공지사항.2022.09.23</p>
+                                <p class="post">공지사항.2022.09.23</p>
                             </div>
                         </div>
                     </div>
@@ -240,7 +240,7 @@
                             <div class="tWrap">
                                 <h3>넷마블게임박물관 건립준비캠페인</h3>
                                 <!-- <p></p> -->
-                                <p class="post" style="padding-top: 60%;">공지사항.2022.09.14</p>
+                                <p class="post">공지사항.2022.09.14</p>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                             <div class="tWrap">
                                 <h3>[게임소통학교]도미노 영상 이벤트<br>결과 발표</h3>
                                 <p>...</p>
-                                <p class="post" style="padding-top: 46%;">공지사항.2022.08.18</p>
+                                <p class="post">공지사항.2022.08.18</p>
                             </div>
                         </div>
                     </div>
@@ -266,7 +266,7 @@
                             <div class="tWrap">
                                 <h3>제13회 게임콘서트 개최 안내</h3>
                                 <p>>>>6월 게임콘서트 참여하기 링크<<<</p>
-                                <p class="post" style="padding-top: 54%;">공지사항.2022.06.23</p>
+                                <p class="post">공지사항.2022.06.23</p>
                             </div>
                         </div>
                     </div>
@@ -328,6 +328,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
+     
         // header 
         //const logoElem = document.getElementsByClassName("logoImg")[0];
         const hdElem = document.querySelector(".hd");
@@ -342,15 +343,16 @@
             hdElem.classList.add("hdClick");
         }
 
-        window.addEventListener('scroll', function(){
-            if (window.scrollY == 0){
-                console.log(window.scrollY)
-                hdOver()
-                hdOut()
-            }else{
-                hdElem.classList.remove("hdClick");
-            }
-        });
+        // window.addEventListener('scroll', function(){
+        //     if (window.scrollY == 0){
+        //         console.log(window.scrollY)
+        //         hdOver()
+        //         hdOut()
+        //     }else{
+        //         hdElem.classList.remove("hdClick");
+        //     }
+        // });
+
         
         subElem.style.display = "none";
         function gnbOver(){

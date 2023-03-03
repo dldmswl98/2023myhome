@@ -327,28 +327,36 @@ body{
         margin: 0 auto;
         padding: 30px 0;
     } */
+
+    .swiper .itemWrap{
+        height: 500px;
+        transition: 0.3s;
+        padding: 20px 15px;
+    }
+    
     .swiper .imgWrap{
         width: 100%;
-        height: 0;
-        padding-top: 50%;
+        height: 40%;
+        /* padding-top: 50%; */
         background-position: center;
         background-size: cover;
     }
     .swiper .tWrap{
+        height: 60%;
         padding: 10px 20px;
         background: white;
+        position: relative;
     }
 
-    .swiper .itemWrap{
-        transition: 0.3s;
-    }
+    
     .swiper .itemWrap:hover{
         transform: translateY(-20px);
         box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     }
 
     .swiper .tWrap .post{
-        padding-top: 40%;
+        position: absolute;
+        bottom: 0;
         font-size: 15px;
         color: #BFBFBF;
     }
